@@ -1,0 +1,61 @@
+@font-face {
+    font-family: Montserrat;
+    src: url('Montserrat-VariableFont_wght.ttf');
+}
+
+.main-sunny {
+    font-family: Montserrat;
+    color: #2A5510;
+
+    background-color: #F7E9B9;
+    position: relative;
+    width: 360px;
+    height: 640px;
+    margin: auto;
+    padding: 30px;
+}
+
+.main-rainy {
+    font-family: Montserrat;
+    color: #164A68;
+
+    background-color: #A3DEF7;
+    position: relative;
+    width: 360px;
+    height: 640px;
+    margin: auto;
+    padding: 30px;
+}
+
+.main-cloudy {
+    font-family: Montserrat;
+    color: #F47775;
+
+    background-color: #F4F7F8;
+    position: relative;
+    width: 360px;
+    height: 640px;
+    margin: auto;
+    padding: 30px;
+}
+
+.weather-summary {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: medium;
+}
+
+.weather-desc {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.weather-desc p {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+td {
+    width: 100%;
+    border-bottom: 1pt dotted black
+}
