@@ -21,7 +21,7 @@ function fetchWeatherForecast() {
 }
 
 function fetchCurrentWeather() {
-    const weatherToday = fetch("https://api.openweathermap.org/data/2.5/weather?q=Stockholm,Sweden&units=imperial&APPID=fed009a1aaae4078dd039f97e739b932")
+    const weatherToday = fetch("https://api.openweathermap.org/data/2.5/weather?q=Stockholm,Sweden&units=metric&APPID=fed009a1aaae4078dd039f97e739b932")
         .then(res => res.json())
         .then(resJson => {
             const summaryElement = document.getElementById("w-summary");
@@ -33,7 +33,7 @@ function fetchCurrentWeather() {
             const currentTemp = Math.round(resJson.main.temp * 10) / 10
 
             const summaryHTML = `
-        <p>${weatherStatus} | ${currentTemp}</p>
+        <p>${weatherStatus} | ${currentTemp} &deg</p>
         <p>sunrise ${sunrise.getHours()}.${sunrise.getMinutes()}</p>
         <p>sunset ${sunset.getHours()}.${sunset.getMinutes()}</p>
         `
